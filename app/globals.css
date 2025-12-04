@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variável de cor da marca - usada para o CTA e botões principais */
+:root{--brand:#2563EB}
+
+/* Estilos básicos para o corpo do site */
+body { @apply bg-gray-50 text-slate-900 }
