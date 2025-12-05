@@ -1,4 +1,14 @@
 {
-  "/page": "app/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/_not-found": "app/_not-found.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/hello/route": "app/api/hello/route.js",
+  "/api/subscribe/route": "app/api/subscribe/route.js",
+  "/api/user/preferences/route": "app/api/user/preferences/route.js",
+  "/api/user/unified-profile/route": "app/api/user/unified-profile/route.js",
+  "/auth/error/page": "app/auth/error/page.js",
+  "/dashboard/connect-account/page": "app/dashboard/connect-account/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/settings/page": "app/dashboard/settings/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
 }

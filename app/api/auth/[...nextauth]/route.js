@@ -1,22 +1,10 @@
+// app/api/auth/[...nextauth]/route.js
+
 import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import { supabaseServer as supabase } from "@/lib/supabaseServer"; 
+// Importa APENAS as opções do ficheiro de configuração lib/auth
+import { authOptions } from "@/lib/auth"; 
 
-const siteUrl =
-  process.env.NEXTAUTH_URL ||
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  'http://localhost:3000';
-
-export const authOptions = {
-  providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID || '',
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-    })
-  ],
-};
-
-console.log("Using NEXTAUTH_URL =", siteUrl);
-
+// A função NextAuth cria os handlers GET e POST automaticamente.
 const handler = NextAuth(authOptions);
+
 export { handler as GET, handler as POST };
